@@ -1,0 +1,49 @@
+[[package]]
+name = "mpmath"
+version = "1.2.1"
+description = "Python library for arbitrary-precision floating-point arithmetic"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+tests = ["pytest (>=4.6)"]
+develop = ["wheel", "codecov", "pytest-cov", "pycodestyle", "pytest (>=4.6)"]
+
+[[package]]
+name = "numpy"
+version = "1.23.3"
+description = "NumPy is the fundamental package for array computing with Python."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "simpy"
+version = "4.0.1"
+description = "Event discrete, process based simulation for Python."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
+name = "sympy"
+version = "1.11.1"
+description = "Computer algebra system (CAS) in Python"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+mpmath = ">=0.19"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.10"
+content-hash = "9ec1daafecf5f03b20c74b106c90947d1a122ad692fb4b40cfec243f4bc22345"
+
+[metadata.files]
+mpmath = []
+numpy = []
+simpy = []
+sympy = []
